@@ -33,7 +33,8 @@ public class ContinueOrNot extends Fragment implements OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.yes_button:
-
+                getFragmentManager().beginTransaction()
+                        .detach(this);
 
             case R.id.no_button:
                 getFragmentManager().popBackStack();

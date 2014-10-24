@@ -40,7 +40,6 @@ public class TextMessageNextStepFragment extends Fragment {
 
                 getFragmentManager().beginTransaction()
                         .replace(R.id.container, new ContinueOrNot())
-
                         .commit();
 
             }
